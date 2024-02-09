@@ -52,5 +52,10 @@
         "Temp/": true
     },
     "dotnet.preferCSharpExtension": true,
-    "dotnet.defaultSolution": "unity-road-example.sln"
+    "dotnet.defaultSolution": "unity-road-example.sln",
+    "cSpell.words": [
+        "Bezier",
+        "Mathf",
+        "UGUI"
+    ]
 }

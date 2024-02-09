@@ -286,15 +286,15 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 586890e6c34a0f81cac9419e95a74fd3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  <roadPrefab>k__BackingField: {fileID: 692465234}
-  <obstaclePrefabs>k__BackingField:
+  <RoadPrefab>k__BackingField: {fileID: 692465234}
+  <ObstaclePrefabs>k__BackingField:
   - {fileID: 1884074337756752357, guid: cb04eea70ee14ab49b68d12e2cbbf680, type: 3}
   - {fileID: 8780424320546655309, guid: 71782582b9d2cac4cba5251a3b767d13, type: 3}
   - {fileID: 1990293589767515956, guid: 367149bd17c4d4d4e8868ec6a5cf8d45, type: 3}
   - {fileID: 515175755739571116, guid: 46f9eda5f45584fb3ad05abcd7af6df2, type: 3}
   - {fileID: 7283668312968719879, guid: 3daef342e8f3f9548b04424eac7d4d0d, type: 3}
   - {fileID: 5924013827781158161, guid: cdcb19fde9e8cba40b7bff849baf2c1b, type: 3}
-  <player>k__BackingField: {fileID: 374125545}
+  <Player>k__BackingField: {fileID: 374125545}
 --- !u!4 &93504890
 Transform:
   m_ObjectHideFlags: 0
@@ -534,6 +534,9 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 178130, guid: 70bf34f6c25c948458f254e87188b00b, type: 3}
       insertIndex: -1
       addedObject: {fileID: 374125558}
+    - targetCorrespondingSourceObject: {fileID: 178130, guid: 70bf34f6c25c948458f254e87188b00b, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 374125562}
   m_SourcePrefab: {fileID: 100100000, guid: 70bf34f6c25c948458f254e87188b00b, type: 3}
 --- !u!1 &374125545 stripped
 GameObject:
@@ -552,19 +555,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ade92d53d16f6384ea357a29b8ba2cca, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  <wheels>k__BackingField:
-  - {fileID: 1237963432}
-  - {fileID: 1032457674}
-  - {fileID: 1319775245}
-  - {fileID: 538066324}
-  <maxSpeed>k__BackingField: 24.3
-  <acceleration>k__BackingField: 35.7
-  <breakAcceleration>k__BackingField: 16.2
-  <reverseAcceleration>k__BackingField: 8
-  <friction>k__BackingField: 0.0212
-  <turnSpeed>k__BackingField: 53.7
-  <wheelTurnAngle>k__BackingField: 22.2
-  <speed>k__BackingField: -0.049879212
+  <MaxSpeed>k__BackingField: 37.8
+  <Acceleration>k__BackingField: 30.4
+  <BreakAcceleration>k__BackingField: 20.8
+  <ReverseAcceleration>k__BackingField: 21.4
+  <Friction>k__BackingField: 0.0282
+  <TurnSpeed>k__BackingField: 44.7
+  <Speed>k__BackingField: 0
 --- !u!54 &374125551
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -713,6 +710,24 @@ AudioListener:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 374125545}
   m_Enabled: 1
+--- !u!114 &374125562
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 374125545}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5a1e811945a823142b34175d64fc80a7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  <Wheels>k__BackingField:
+  - {fileID: 1237963432}
+  - {fileID: 1032457674}
+  - {fileID: 1319775245}
+  - {fileID: 538066324}
+  <WheelTurnAngle>k__BackingField: 0
 --- !u!850595691 &481223275
 LightingSettings:
   m_ObjectHideFlags: 0
@@ -977,9 +992,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   target: {fileID: 374125545}
-  <distance>k__BackingField: 6
-  <proportionalSpeed>k__BackingField: 4
-  <reversingDistance>k__BackingField: 6.66
+  <Distance>k__BackingField: 6.3
+  <ProportionalSpeed>k__BackingField: 2.18
+  <ReversingDistance>k__BackingField: 2.37
 --- !u!114 &534669907
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1359,8 +1374,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2cfac2f63918ada7591583bdb64d57d5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  <player>k__BackingField: {fileID: 374125550}
-  <engineSound>k__BackingField: {fileID: 777428802}
+  <Player>k__BackingField: {fileID: 374125550}
+  <EngineSound>k__BackingField: {fileID: 777428802}
 --- !u!1001 &974359749
 PrefabInstance:
   m_ObjectHideFlags: 0
