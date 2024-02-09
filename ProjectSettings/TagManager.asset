@@ -3,7 +3,13 @@
 --- !u!78 &1
 TagManager:
   serializedVersion: 2
-  tags: []
+  tags:
+  - Barrel
+  - Crate
+  - Barrier
+  - Rock
+  - Cone
+  - Spool
   layers:
   - Default
   - TransparentFX

@@ -1,4 +1,5 @@
 using System;
+using Palmmedia.ReportGenerator.Core.Reporting.Builders;
 using Unity.VisualScripting;
 using UnityEditor;
 using UnityEngine;
@@ -80,6 +81,26 @@ public class VehicleController : MonoBehaviour
     {
         value--;
         return 1 * (value * value * value * value * value + 1) + 0;
+    }
+
+    void OnCollisionEnter(Collision collision)
+    {
+        switch (collision.collider.tag)
+        {
+            case "Cone":
+            case "Barrier":
+                speed *= 0.95f;
+                break;
+            case "Barrel":
+            case "Crate":
+                speed *= 0.9f;
+                break;
+            case "Spool":
+            case "Rock":
+                speed *= 0.8f;
+                break;
+        }
+        
     }
 
 }

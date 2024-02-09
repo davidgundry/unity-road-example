@@ -50,18 +50,18 @@ public class LevelGenerator : MonoBehaviour
         }
     }
 
-    void AddObstacles(List<GameObject> objects, float roadStart)
+    void AddObstacles(List<GameObject> objectList, float roadStart)
     {
-        for (int i=0;i<objects.Count;i++)
+        for (int i=0;i<objectList.Count;i++)
         {
-            Destroy(objects[i]);
+            Destroy(objectList[i]);
         }
-        objects.Clear();
+        objectList.Clear();
         int count = UnityEngine.Random.Range(5, 25);
         for (int i=0;i<count;i++)
         {
             GameObject newObject = Instantiate(obstaclePrefabs[UnityEngine.Random.Range(0, obstaclePrefabs.Length)]);
-            objects.Append(newObject);
+            objectList.Append(newObject);
             newObject.transform.position = new Vector3(UnityEngine.Random.Range(-8, 8), 0, roadStart + UnityEngine.Random.Range(0, roadLength));
         }
     }
